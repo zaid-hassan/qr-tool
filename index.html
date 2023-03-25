@@ -15,7 +15,12 @@
             this is scanner
         </div>
         <div id="generator" class="item flex flexcol subitemcenter">
-            this is generator
+            <h1>Generate your Qr code here</h1>
+            <form action="/" id="qrcode-generator" class="flex formitemcenter">
+                <input type="text" name="qrcode-text" id="qrcode-input" placeholder="Enter QRcode link/text">
+                <!-- <input type="submit" name="qrcode-submit" id="sub" value="Generate QRcode"> -->
+                <button type="submit" id="sub" class="btn">Generate code</button>
+            </form>
             <div id="qrgen"></div>
         </div>
     </div>

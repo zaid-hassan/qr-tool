@@ -1,9 +1,37 @@
+body{
+    background-color: #2B2D35;
+}
 .container{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 0% 23px;
 }
 .item{
-    border: 2px solid gray;
+    border: 2px solid #46484F;
     height: 90%;
     width: 49%;
+}
+#generator h1{
+    color: #0F0E11;
+}
+form input {
+    border: transparent;
+    outline: transparent;
+    background-color: #23252D;
+    color: #e7e9f1;
+    height: 24px;
+    width: 300px;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.btn{
+    border: transparent;
+    border-radius: 5px;
+    padding: 7px 23px;
+    cursor: pointer;
+    background-color: #0F0E11;
+    color: #46484F;
+    box-shadow: 0px 0px 15px #0F0E11;
+}
+.btn:hover{
+    color: #5b5d64;
 }
