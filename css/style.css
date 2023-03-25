@@ -6,12 +6,13 @@ body{
     padding: 0% 23px;
 }
 .item{
-    border: 2px solid #46484F;
     height: 90%;
     width: 49%;
+    border: 2px solid #46484F;
+    border-radius: 5px;
 }
 #generator h1{
-    color: #0F0E11;
+    color: #46484F;
 }
 form input {
     border: transparent;
