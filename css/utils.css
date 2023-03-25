@@ -1,0 +1,20 @@
+.flex{
+    display: flex;
+}
+.flexrow{
+    flex-direction: row;
+}
+.flexcol{
+    flex-direction: column;
+}
+.itemcenter{
+    justify-content: space-evenly;
+    align-items: center;
+    height: 97vh;
+}
+.subitemcenter{
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 49%;
+}

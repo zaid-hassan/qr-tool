@@ -1,0 +1,9 @@
+.container{
+    border: 2px solid black;
+    padding: 0% 23px;
+}
+.item{
+    border: 2px solid gray;
+    height: 90%;
+    width: 49%;
+}
