@@ -8,22 +8,25 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utils.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
 </head>
 <body>
     <div class="container flex flexrow itemcenter">
         <div id="scanner" class="item flex flexcol subitemcenter">
-            this is scanner
+            <h1>Scan your QR code here</h1>
+            <div id="reader"></div>
+            <div id="result"></div>
         </div>
         <div id="generator" class="item flex flexcol subitemcenter">
             <h1>Generate your Qr code here</h1>
             <form action="/" id="qrcode-generator" class="flex formitemcenter">
                 <input type="text" name="qrcode-text" id="qrcode-input" placeholder="Enter QRcode link/text">
-                <!-- <input type="submit" name="qrcode-submit" id="sub" value="Generate QRcode"> -->
                 <button type="submit" id="sub" class="btn">Generate code</button>
             </form>
             <div id="qrgen"></div>
         </div>
     </div>
     <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

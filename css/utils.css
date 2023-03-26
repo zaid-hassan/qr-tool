@@ -23,3 +23,23 @@
     align-items: center;
     width: 80%;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .flexrow{
+        flex-direction: column;
+    }
+    .subitemcenter {
+        width: 100%;
+        height: 49%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+    .flexrow{
+        flex-direction: column;
+    }
+    .subitemcenter {
+        width: 100%;
+        height: 49%;
+    }
+}

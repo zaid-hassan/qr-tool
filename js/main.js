@@ -5,8 +5,8 @@ let qrCode;
 function generateQRcode(qrinput) {
     return new QRCode("qrgen", {
         text: qrinput,
-        width: 228,
-        height: 228,
+        width: 138,
+        height: 138,
         colorDark: "#0F0E11",
         colorLight: "#2B2D35",
         correctLevel : QRCode.CorrectLevel.H

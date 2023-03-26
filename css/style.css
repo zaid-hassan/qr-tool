@@ -2,23 +2,40 @@ body{
     background-color: #2B2D35;
 }
 .container{
-    /* border: 2px solid black; */
     padding: 0% 23px;
 }
 .item{
     height: 90%;
     width: 49%;
-    border: 2px solid #46484F;
+    border: 2px solid #B8B8BC;
     border-radius: 5px;
 }
-#generator h1{
-    color: #46484F;
+.item h1{
+    text-align: center;
+    color: #B8B8BC;
 }
+
+#reader{
+    width: 400px;
+}
+#result h3{
+    text-align: center;
+    color: #B8B8BC;
+}
+#result a{
+    text-decoration: none;
+    color: #B8B8BC;
+}
+#result a:hover{
+    text-decoration: underline;
+    color: #B8B8BC;
+}
+
 form input {
     border: transparent;
     outline: transparent;
     background-color: #23252D;
-    color: #e7e9f1;
+    color: #B8B8BC;
     height: 24px;
     width: 300px;
     padding: 3px 10px;
@@ -34,7 +51,7 @@ form input {
     padding: 7px 23px;
     cursor: pointer;
     background-color: #0F0E11;
-    color: #46484F;
+    color: #B8B8BC;
     box-shadow: 0px 0px 15px #0F0E11;
 }
 .btn:hover{
@@ -43,4 +60,43 @@ form input {
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+/* for typical mobiles */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .container {
+        padding: 0px 0px;
+    }
+    .item h1{
+        font-size: 24px;
+    }
+    form input {
+        width: 150px;
+    }
+    .btn{
+        font-size: 12px;
+        padding: 7.5px 6px;
+    }
+    #reader {
+        width: 300px;
+    }
+}
+/* for mobile landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        padding: 0px 0px;
+    }
+    .item h1{
+        font-size: 19px;
+    }
+    form input {
+        width: 150px;
+    }
+    .btn{
+        font-size: 12px;
+        padding: 7.5px 6px;
+    }
+    #reader {
+        width: 300px;
+    }
 }
