@@ -1,8 +1,46 @@
 * {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Neucha', cursive;
 }
 body{
-    background-color: #2B2D35;
+    --background-color: #F0EBE3;
+    --text-color: #7D9D9C;
+    --button-text-color: var(--background-color);
+    --divider: var(--text-color);
+    --accent-color: #576F72;
+    --transition-delay: 1s;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: var(--transition-delay);
+}
+body.dark{
+    --background-color: #576F72;
+    --text-color: #E4DCCF;
+    --accent-color: #F0EBE3;
+    transition: var(--transition-delay);
+}
+.theme-toggle-button{
+    background: transparent;   
+    border: transparent;
+}
+
+.header{
+    color: var(--text-color);
+    width: 100%;
+}
+.header a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.header a:hover{
+    text-decoration: underline;
+    color: var(--text-color);
+}
+.icon{
+    width: 25px;
+    height: 25px;
+    margin: 20px;
+    fill: var(--text-color);
 }
 .container{
     padding: 0% 23px;
@@ -10,12 +48,12 @@ body{
 .item{
     height: 90%;
     width: 49%;
-    border: 2px solid #B8B8BC;
+    border: 2px solid var(--divider);
     border-radius: 5px;
 }
 .item h1{
     text-align: center;
-    color: #B8B8BC;
+    color: var(--text-color);
 }
 
 #reader{
@@ -23,48 +61,44 @@ body{
 }
 #result h3{
     text-align: center;
-    color: #B8B8BC;
+    color: var(--text-color);
 }
 #result a{
     text-decoration: none;
-    color: #B8B8BC;
+    color: var(--text-color);
 }
 #result a:hover{
     text-decoration: underline;
-    color: #B8B8BC;
 }
 
 form input {
     border: transparent;
     outline: transparent;
-    background-color: #23252D;
-    color: #B8B8BC;
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
     height: 24px;
     width: 300px;
     padding: 3px 10px;
     border-radius: 5px;
-}
-@keyframes glow{
-    form {box-shadow: 0px 0px 15px #0F0E11}
-    to {box-shadow: 0px 0px 15px #23252D}
+    transition: var(--transition-delay);
 }
 .btn{
     border: transparent;
     border-radius: 5px;
     padding: 7px 23px;
     cursor: pointer;
-    background-color: #0F0E11;
-    color: #B8B8BC;
-    box-shadow: 0px 0px 15px #0F0E11;
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+    transition: var(--transition-delay);
+    transform: scale(1);
 }
 .btn:hover{
-    color: #5b5d64;
-    animation-name: glow;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
-
+footer {
+    text-align: center;
+}
 /* for typical mobiles */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     .container {
