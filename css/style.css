@@ -63,6 +63,9 @@ body.dark{
     text-align: center;
     color: var(--text-color);
 }
+#result p {
+    text-align: center;
+}
 #result a{
     text-decoration: none;
     color: var(--text-color);
