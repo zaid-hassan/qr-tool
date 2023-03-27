@@ -7,8 +7,8 @@ function generateQRcode(qrinput) {
         text: qrinput,
         width: 138,
         height: 138,
-        colorDark: "#0F0E11",
-        colorLight: "#2B2D35",
+        colorDark: "#000000",
+        colorLight: "#ffffff",
         correctLevel : QRCode.CorrectLevel.H
     });
 }
